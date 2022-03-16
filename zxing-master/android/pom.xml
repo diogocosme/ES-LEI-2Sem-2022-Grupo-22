@@ -27,12 +27,12 @@
     <dependency>
       <groupId>com.google.zxing</groupId>
       <artifactId>android-core</artifactId>
+ 		<version>3.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.google.android</groupId>
-    <artifactId>android</artifactId>
-    <version>4.1.1.4</version>
-    <scope>provided</scope>
+      <artifactId>android</artifactId>
+	<version>4.1.1.4</version>
     </dependency>
   </dependencies>
 
@@ -41,7 +41,7 @@
     <artifactId>zxing-parent</artifactId>
     <version>3.5.0-SNAPSHOT</version>
   </parent>
-
+<properties><android.sdk.path>/Users/pedro/android-sdks/platforms/android-29</android.sdk.path></properties>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
