@@ -15,53 +15,53 @@
  limitations under the License.
  -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	<modelVersion>4.0.0</modelVersion>
 
-  <artifactId>zxing.appspot.com</artifactId>
-  <version>3.5.0-SNAPSHOT</version>
-  <packaging>war</packaging>
+	<artifactId>zxing.appspot.com</artifactId>
+	<version>3.5.0-SNAPSHOT</version>
+	<packaging>war</packaging>
 
-  <dependencies>
-    <dependency>
-      <groupId>com.google.gwt</groupId>
-      <artifactId>gwt-user</artifactId>
-      <version>${gwt.version}</version>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-user</artifactId>
+			<version>${gwt.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
 
-  <parent>
-    <groupId>com.google.zxing</groupId>
-    <artifactId>zxing-parent</artifactId>
-    <version>3.5.0-SNAPSHOT</version>
-  </parent>
+	<parent>
+		<groupId>com.google.zxing</groupId>
+		<artifactId>zxing-parent</artifactId>
+		<version>3.5.0-SNAPSHOT</version>
+	</parent>
 
-  <properties>
-    <gwt.version>2.9.0</gwt.version>
-  </properties>
+	<properties>
+		<gwt.version>2.9.0</gwt.version>
+	</properties>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>gwt-maven-plugin</artifactId>
-        <version>${gwt.version}</version>
-        <configuration>
-          <runTarget>Generator.html</runTarget>
-          <inplace>true</inplace>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>compile</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>gwt-maven-plugin</artifactId>
+				<version>${gwt.version}</version>
+				<configuration>
+					<runTarget>Generator.html</runTarget>
+					<inplace>true</inplace>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 
-  <name>ZXing Appspot-based encoder</name>
-  <description>GWT-based encoder app hosted at zxing.appspot.com</description>
+	<name>ZXing Appspot-based encoder</name>
+	<description>GWT-based encoder app hosted at zxing.appspot.com</description>
 
 </project>
