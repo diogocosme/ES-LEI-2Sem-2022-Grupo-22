@@ -6,6 +6,14 @@
     <property name="checkstyle.cache.file" value="${project_loc}/target/checkstyle-cachefile"/>
   </local-check-config>
   <fileset name="java-sources-validate" enabled="true" check-config-name="maven-checkstyle-plugin validate" local="true">
+    <file-match-pattern match-pattern="^src/test/java.*\.java" include-pattern="true"/>
+    <file-match-pattern match-pattern="^src/.*\.java" include-pattern="true"/>
+    <file-match-pattern match-pattern="^src/test/java.*.*R\.java" include-pattern="false"/>
+    <file-match-pattern match-pattern="^src/test/java.*.*BuildConfig\.java" include-pattern="false"/>
+    <file-match-pattern match-pattern="^src/test/java.*.*Manifest\.java" include-pattern="false"/>
+    <file-match-pattern match-pattern="^src.*.*R\.java" include-pattern="false"/>
+    <file-match-pattern match-pattern="^src.*.*BuildConfig\.java" include-pattern="false"/>
+    <file-match-pattern match-pattern="^src.*.*Manifest\.java" include-pattern="false"/>
     <file-match-pattern match-pattern="^src/main/resources.*\.properties" include-pattern="true"/>
     <file-match-pattern match-pattern="^src/test/resources.*\.properties" include-pattern="true"/>
   </fileset>
