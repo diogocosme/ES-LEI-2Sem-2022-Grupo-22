@@ -1,0 +1,15 @@
+com\google\zxing\datamatrix\encoder\MinimalEncoder$1.class
+com\google\zxing\aztec\decoder\Decoder$1.class
+com\google\zxing\qrcode\detector\FinderPatternFinder$1.class
+com\google\zxing\datamatrix\decoder\Version$1.class
+com\google\zxing\datamatrix\decoder\DecodedBitStreamParser$1.class
+com\google\zxing\oned\Code128Writer$1.class
+com\google\zxing\MultiFormatWriter$1.class
+com\google\zxing\pdf417\decoder\DecodedBitStreamParser$1.class
+com\google\zxing\qrcode\encoder\Encoder$1.class
+com\google\zxing\qrcode\encoder\MinimalEncoder$1.class
+com\google\zxing\pdf417\encoder\PDF417HighLevelEncoder$1.class
+com\google\zxing\multi\qrcode\detector\MultiFinderPatternFinder$1.class
+com\google\zxing\multi\qrcode\QRCodeMultiReader$1.class
+com\google\zxing\qrcode\decoder\DecodedBitStreamParser$1.class
+com\google\zxing\common\MinimalECIInput$1.class
