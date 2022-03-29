@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.google.zxing.oned.UPCABlackBox4TestCase" time="4.032" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\PEDRO\3Ano Engenharia Informática\ES-LEI-2Sem-2022-Grupo-22\core\target\test-classes;C:\PEDRO\3Ano Engenharia Informática\ES-LEI-2Sem-2022-Grupo-22\core\target\classes;C:\Users\pedro\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\pedro\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Lisbon"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PT"/>
+    <property name="sun.boot.library.path" value="C:\Users\pedro\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\pedro\AppData\Local\Temp\surefire17481881784758842725\surefirebooter16528581371132197155.jar C:\Users\pedro\AppData\Local\Temp\surefire17481881784758842725 2022-03-28T15-49-29_352-jvmRun1 surefire18359953203920120658tmp surefire_75384392038255170762tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\PEDRO\3Ano Engenharia Informática\ES-LEI-2Sem-2022-Grupo-22\core\target\test-classes;C:\PEDRO\3Ano Engenharia Informática\ES-LEI-2Sem-2022-Grupo-22\core\target\classes;C:\Users\pedro\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\pedro\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\pedro"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="C:\Users\pedro\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\PEDRO\3Ano Engenharia Informática\ES-LEI-2Sem-2022-Grupo-22\core"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\pedro\AppData\Local\Temp\surefire17481881784758842725\surefirebooter16528581371132197155.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.2+8"/>
+    <property name="user.name" value="pedro"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.2+8"/>
+    <property name="localRepository" value="C:\Users\pedro\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\pedro\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="user.dir" value="C:\PEDRO\3Ano Engenharia Informática\ES-LEI-2Sem-2022-Grupo-22\core"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.util.logging.SimpleFormatter.format" value="%4$s: %5$s%6$s%n"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\pedro\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.2\bin;C:\Users\pedro\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\pedro\AppData\Local\Programs\Python\Python310\;C:\Users\pedro\AppData\Local\Microsoft\WindowsApps;C:\Users\pedro\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Users\pedro\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.2+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testBlackBox" classname="com.google.zxing.oned.UPCABlackBox4TestCase" time="4.03">
+    <system-err><![CDATA[INFO: Starting src\test\resources\blackbox\upca-4\1.png
+INFO: Starting src\test\resources\blackbox\upca-4\10.png
+INFO: Format mismatch: expected 'UPC_A' but got 'EAN_13' (try harder, rotation: 0)
+INFO: Format mismatch: expected 'UPC_A' but got 'EAN_13' (try harder, rotation: 180)
+INFO: Starting src\test\resources\blackbox\upca-4\11.png
+INFO: Starting src\test\resources\blackbox\upca-4\12.png
+INFO: Starting src\test\resources\blackbox\upca-4\13.png
+INFO: Starting src\test\resources\blackbox\upca-4\14.png
+INFO: Starting src\test\resources\blackbox\upca-4\15.png
+INFO: Starting src\test\resources\blackbox\upca-4\16.png
+INFO: Starting src\test\resources\blackbox\upca-4\17.png
+INFO: Starting src\test\resources\blackbox\upca-4\18.png
+INFO: Starting src\test\resources\blackbox\upca-4\19.png
+INFO: Starting src\test\resources\blackbox\upca-4\2.png
+INFO: Starting src\test\resources\blackbox\upca-4\3.png
+INFO: Starting src\test\resources\blackbox\upca-4\4.png
+INFO: Starting src\test\resources\blackbox\upca-4\5.png
+INFO: Starting src\test\resources\blackbox\upca-4\6.png
+INFO: Starting src\test\resources\blackbox\upca-4\7.png
+INFO: Starting src\test\resources\blackbox\upca-4\8.png
+INFO: Starting src\test\resources\blackbox\upca-4\9.png
+INFO: Rotation 0 degrees:
+INFO:  9 of 19 images passed (9 required)
+INFO:  0 failed due to misreads, 10 not detected
+INFO:  11 of 19 images passed with try harder (11 required)
+INFO:  1 failed due to misreads, 7 not detected
+INFO: Rotation 180 degrees:
+INFO:  9 of 19 images passed (9 required)
+INFO:  0 failed due to misreads, 10 not detected
+INFO:  11 of 19 images passed with try harder (11 required)
+INFO:  1 failed due to misreads, 7 not detected
+INFO: Decoded 40 images out of 76 (52%, 40 required)
+]]></system-err>
+  </testcase>
+</testsuite>

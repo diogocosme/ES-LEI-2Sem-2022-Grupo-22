@@ -1,0 +1,28 @@
+-encoding
+'UTF-8'
+-protected
+-quiet
+-source
+'1.8'
+-sourcepath
+'C:/PEDRO/3Ano Engenharia Informática/ES-LEI-2Sem-2022-Grupo-22/core/src/main/java;C:/PEDRO/3Ano Engenharia Informática/ES-LEI-2Sem-2022-Grupo-22/core/target/generated-sources/annotations'
+-html5
+-author
+-bottom
+'Copyright &#169; 2007&#x2013;2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/PEDRO/3Ano Engenharia Informática/ES-LEI-2Sem-2022-Grupo-22/core/target/apidocs'
+-docencoding
+'UTF-8'
+-Xdoclint:all
+-doctitle
+'ZXing Core 3.5.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/PEDRO/3Ano Engenharia Informática/ES-LEI-2Sem-2022-Grupo-22/core/target/javadoc-bundle-options'
+-notimestamp
+-use
+-version
+-windowtitle
+'ZXing Core 3.5.0-SNAPSHOT API'

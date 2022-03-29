@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.google.zxing.aztec.detector.DetectorTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.043 s - in com.google.zxing.aztec.detector.DetectorTest
