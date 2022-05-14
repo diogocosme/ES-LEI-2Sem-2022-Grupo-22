@@ -22,6 +22,9 @@
 	<packaging>jar</packaging>
 
 	<dependencies>
+	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-checkstyle-plugin -->
+
+	
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

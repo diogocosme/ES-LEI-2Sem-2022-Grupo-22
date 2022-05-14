@@ -157,13 +157,7 @@ public final class Code39Reader extends OneDReader {
       throw NotFoundException.getNotFoundInstance();
     }
 
-    String resultString;
-    if (extendedMode) {
-      resultString = decodeExtended(result);
-    } else {
-      resultString = result.toString();
-    }
-
+    String resultString = resultString(result);
     float left = (start[1] + start[0]) / 2.0f;
     float right = lastStart + lastPatternSize / 2.0f;
 
@@ -176,6 +170,16 @@ public final class Code39Reader extends OneDReader {
         BarcodeFormat.CODE_39);
     resultObject.putMetadata(ResultMetadataType.SYMBOLOGY_IDENTIFIER, "]A0");
     return resultObject;
+  }
+
+  private String resultString(StringBuilder result) throws FormatException {
+    String resultString;
+    if (extendedMode) {
+      resultString = decodeExtended(result);
+    } else {
+      resultString = result.toString();
+    }
+    return resultString;
   }
 
   private static int[] findAsteriskPattern(BitArray row, int[] counters) throws NotFoundException {
