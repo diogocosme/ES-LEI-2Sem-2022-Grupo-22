@@ -25,6 +25,8 @@ import com.google.zxing.Dimension;
  */
 public class SymbolInfo {
 
+  private SymbolInfoProduct symbolInfoProduct;
+
   static final SymbolInfo[] PROD_SYMBOLS = {
     new SymbolInfo(false, 3, 5, 8, 8, 1),
     new SymbolInfo(false, 5, 7, 10, 10, 1),
@@ -68,7 +70,6 @@ public class SymbolInfo {
   private final int errorCodewords;
   public final int matrixWidth;
   public final int matrixHeight;
-  private final int dataRegions;
   private final int rsBlockData;
   private final int rsBlockError;
 
@@ -90,12 +91,12 @@ public class SymbolInfo {
   SymbolInfo(boolean rectangular, int dataCapacity, int errorCodewords,
              int matrixWidth, int matrixHeight, int dataRegions,
              int rsBlockData, int rsBlockError) {
+    this.symbolInfoProduct = new SymbolInfoProduct(dataRegions);
     this.rectangular = rectangular;
     this.dataCapacity = dataCapacity;
     this.errorCodewords = errorCodewords;
     this.matrixWidth = matrixWidth;
     this.matrixHeight = matrixHeight;
-    this.dataRegions = dataRegions;
     this.rsBlockData = rsBlockData;
     this.rsBlockError = rsBlockError;
   }
@@ -152,52 +153,20 @@ public class SymbolInfo {
     return null;
   }
 
-  private int getHorizontalDataRegions() {
-    switch (dataRegions) {
-      case 1:
-        return 1;
-      case 2:
-      case 4:
-        return 2;
-      case 16:
-        return 4;
-      case 36:
-        return 6;
-      default:
-        throw new IllegalStateException("Cannot handle this number of data regions");
-    }
-  }
-
-  private int getVerticalDataRegions() {
-    switch (dataRegions) {
-      case 1:
-      case 2:
-        return 1;
-      case 4:
-        return 2;
-      case 16:
-        return 4;
-      case 36:
-        return 6;
-      default:
-        throw new IllegalStateException("Cannot handle this number of data regions");
-    }
-  }
-
   public final int getSymbolDataWidth() {
-    return getHorizontalDataRegions() * matrixWidth;
+    return symbolInfoProduct.getHorizontalDataRegions() * matrixWidth;
   }
 
   public final int getSymbolDataHeight() {
-    return getVerticalDataRegions() * matrixHeight;
+    return symbolInfoProduct.getVerticalDataRegions() * matrixHeight;
   }
 
   public final int getSymbolWidth() {
-    return getSymbolDataWidth() + (getHorizontalDataRegions() * 2);
+    return getSymbolDataWidth() + (symbolInfoProduct.getHorizontalDataRegions() * 2);
   }
 
   public final int getSymbolHeight() {
-    return getSymbolDataHeight() + (getVerticalDataRegions() * 2);
+    return getSymbolDataHeight() + (symbolInfoProduct.getVerticalDataRegions() * 2);
   }
 
   public int getCodewordCount() {

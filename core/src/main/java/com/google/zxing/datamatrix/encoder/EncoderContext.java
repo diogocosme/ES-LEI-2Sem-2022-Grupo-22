@@ -22,10 +22,9 @@ import java.nio.charset.StandardCharsets;
 
 final class EncoderContext {
 
+  private EncoderContextProduct encoderContextProduct = new EncoderContextProduct();
   private final String msg;
   private SymbolShapeHint shape;
-  private Dimension minSize;
-  private Dimension maxSize;
   private final StringBuilder codewords;
   int pos;
   private int newEncoding;
@@ -54,8 +53,7 @@ final class EncoderContext {
   }
 
   public void setSizeConstraints(Dimension minSize, Dimension maxSize) {
-    this.minSize = minSize;
-    this.maxSize = maxSize;
+    encoderContextProduct.setSizeConstraints(minSize, maxSize);
   }
 
   public String getMessage() {
@@ -124,7 +122,8 @@ final class EncoderContext {
 
   public void updateSymbolInfo(int len) {
     if (this.symbolInfo == null || len > this.symbolInfo.getDataCapacity()) {
-      this.symbolInfo = SymbolInfo.lookup(len, shape, minSize, maxSize, true);
+      this.symbolInfo = SymbolInfo.lookup(len, shape, encoderContextProduct.getMinSize(), 
+                        encoderContextProduct.getMaxSize(), true);
     }
   }
 

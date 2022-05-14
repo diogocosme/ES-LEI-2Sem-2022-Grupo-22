@@ -18,3 +18,23 @@
     <file-match-pattern match-pattern="^src/test/resources/.*\.properties" include-pattern="true"/>
   </fileset>
 </fileset-config>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fileset-config file-format-version="1.2.0" simple-config="false" sync-formatter="false">
+  <local-check-config name="maven-checkstyle-plugin validate" location="file:/C:/Users/Diogo%20Cosme/Documents/ISCTE/3º%20ano/ES/ES-LEI-2Sem-2022-Grupo-22/core/src/checkstyle/checkstyle.xml" type="remote" description="maven-checkstyle-plugin configuration validate">
+    <property name="checkstyle.header.file" value="C:\Users\Diogo Cosme\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\core\com.basistech.m2e.code.quality.checkstyleConfigurator\checkstyle-header-validate.txt"/>
+    <property name="checkstyle.cache.file" value="${project_loc}/target/checkstyle-cachefile"/>
+  </local-check-config>
+  <fileset name="java-sources-validate" enabled="true" check-config-name="maven-checkstyle-plugin validate" local="true">
+    <file-match-pattern match-pattern="^src/main/java/.*\.java" include-pattern="true"/>
+    <file-match-pattern match-pattern="^src/test/java/.*\.java" include-pattern="true"/>
+    <file-match-pattern match-pattern="^src/main/java.*.*R\.java" include-pattern="false"/>
+    <file-match-pattern match-pattern="^src/main/java.*.*BuildConfig\.java" include-pattern="false"/>
+    <file-match-pattern match-pattern="^src/main/java.*.*Manifest\.java" include-pattern="false"/>
+    <file-match-pattern match-pattern="^src/test/java.*.*R\.java" include-pattern="false"/>
+    <file-match-pattern match-pattern="^src/test/java.*.*BuildConfig\.java" include-pattern="false"/>
+    <file-match-pattern match-pattern="^src/test/java.*.*Manifest\.java" include-pattern="false"/>
+    <file-match-pattern match-pattern="^src/main/resources.*\.properties" include-pattern="true"/>
+    <file-match-pattern match-pattern="^src/test/resources/.*\.properties" include-pattern="true"/>
+  </fileset>
+</fileset-config>
