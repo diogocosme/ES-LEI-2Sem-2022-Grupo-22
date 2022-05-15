@@ -291,76 +291,81 @@ final class GeneralAppIdDecoder {
       return new DecodedChar(pos + 7, (char) (sevenBitValue + 7));
     }
 
+    char c = c(pos);
+    return new DecodedChar(pos + 8, c);
+  }
+
+  private char c(int pos) throws FormatException {
     int eightBitValue = extractNumericValueFromBitArray(pos, 8);
     char c;
     switch (eightBitValue) {
-      case 232:
+      case 232 :
         c = '!';
         break;
-      case 233:
+      case 233 :
         c = '"';
         break;
-      case 234:
+      case 234 :
         c = '%';
         break;
-      case 235:
+      case 235 :
         c = '&';
         break;
-      case 236:
+      case 236 :
         c = '\'';
         break;
-      case 237:
+      case 237 :
         c = '(';
         break;
-      case 238:
+      case 238 :
         c = ')';
         break;
-      case 239:
+      case 239 :
         c = '*';
         break;
-      case 240:
+      case 240 :
         c = '+';
         break;
-      case 241:
+      case 241 :
         c = ',';
         break;
-      case 242:
+      case 242 :
         c = '-';
         break;
-      case 243:
+      case 243 :
         c = '.';
         break;
-      case 244:
+      case 244 :
         c = '/';
         break;
-      case 245:
+      case 245 :
         c = ':';
         break;
-      case 246:
+      case 246 :
         c = ';';
         break;
-      case 247:
+      case 247 :
         c = '<';
         break;
-      case 248:
+      case 248 :
         c = '=';
         break;
-      case 249:
+      case 249 :
         c = '>';
         break;
-      case 250:
+      case 250 :
         c = '?';
         break;
-      case 251:
+      case 251 :
         c = '_';
         break;
-      case 252:
+      case 252 :
         c = ' ';
         break;
-      default:
+      default :
         throw FormatException.getFormatInstance();
     }
-    return new DecodedChar(pos + 8, c);
+    return c;
   }
 
   private boolean isStillAlpha(int pos) {
