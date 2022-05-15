@@ -49,7 +49,7 @@
 		<groupId>com.google.zxing</groupId>
 		<artifactId>zxing-parent</artifactId>
 		<!--<version>3.5.0-SNAPSHOT</version>-->
-		<version>3.4.1</version>
+		<version>3.5.0</version>
 	</parent>
 
 	<name>ZXing Core</name>
