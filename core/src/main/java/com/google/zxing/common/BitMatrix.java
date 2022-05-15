@@ -510,5 +510,19 @@ public final class BitMatrix implements Cloneable {
   public BitMatrix clone() {
     return new BitMatrix(width, height, rowSize, bits.clone());
   }
+  
+  /**
+   * Mirror the bit matrix in order to attempt a second reading. 
+   */
+  public void mirror() {
+    for (int x = 0; x < getWidth(); x++) {
+      for (int y = x + 1; y < getHeight(); y++) {
+        if (get(x, y) != get(y, x)) {
+          flip(y, x);
+          flip(x, y);
+        }
+      }
+    }
+  }
 
 }
